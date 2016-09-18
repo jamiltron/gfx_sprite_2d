@@ -5,7 +5,7 @@ extern crate gfx_window_glutin;
 extern crate glutin;
 extern crate image;
 
-pub type ColorFormat = gfx::format::Srgba8;
+pub type ColorFormat = gfx::format::Rgba8;
 pub type DepthFormat = gfx::format::Depth;
 
 use gfx::{Device, tex};
@@ -13,19 +13,19 @@ use gfx::traits::FactoryExt;
 use std::io::Cursor;
 
 gfx_defines!{
-    // this is the form of our vertex buffer objects
+// this is the form of our vertex buffer objects
     vertex Vertex {
         position: [f32; 2] = "position",
         tex_coord: [f32; 2] = "texCoord",
     }
 
-    // represents the form of data we pass to and from the gpu
+// represents the form of data we pass to and from the gpu, the out color is alpha blended
     pipeline pipe {
         vbuf: gfx::VertexBuffer<Vertex> = (),
         model: gfx::Global<[[f32; 4]; 4]> = "model",
         projection: gfx::Global<[[f32; 4]; 4]> = "projection",
         our_texture: gfx::TextureSampler<[f32; 4]> = "ourTexture",
-        out: gfx::RenderTarget<ColorFormat> = "color",
+        out: gfx::BlendTarget<ColorFormat> = ("color", gfx::state::MASK_ALL, gfx::preset::blend::ALPHA),
     }
 }
 
