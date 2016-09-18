@@ -84,7 +84,7 @@ fn main() {
     let builder = glutin::WindowBuilder::new()
         .with_title(WINDOW_TITLE)
         .with_dimensions(WINDOW_WIDTH, WINDOW_HEIGHT)
-        .with_gl(glutin::GlRequest::Specific(glutin::Api::OpenGl, (3, 3)))
+        .with_gl(glutin::GlRequest::Specific(glutin::Api::OpenGl, (3, 2)))
         .with_gl_profile(glutin::GlProfile::Core)
         .with_vsync();
 
