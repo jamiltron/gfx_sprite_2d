@@ -3,7 +3,7 @@ name = "gfx_sprite_2d"
 version = "0.1.0"
 authors = ["Justin Hamilton <justin@jamiltron.com>"]
 license = "BSD-3-CLAUSE"
-url = "https://github.com/jamiltron/gfx_sprite_2d"
+homepage = "https://github.com/jamiltron/gfx_sprite_2d"
 
 [dependencies]
 cgmath = "*"
