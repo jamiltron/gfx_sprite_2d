@@ -29,7 +29,7 @@ gfx_defines!{
     }
 }
 
-const CLEAR_COLOR: [f32; 4] = [0.1, 0.1, 0.1, 1.0];
+const CLEAR_COLOR: [f32; 4] = [0.59, 0.93, 0.59, 1.0];
 
 // each texture quad's position and what point on the texture to tie it to
 const TEX_QUAD: [Vertex; 4] = [Vertex {
@@ -61,8 +61,8 @@ const WINDOW_TITLE: &'static str = "GFX-SPRITE-2D";
 
 const SPRITE_X: f32 = WINDOW_WIDTH as f32 / 2.0;
 const SPRITE_Y: f32 = WINDOW_HEIGHT as f32 / 2.0;
-const SPRITE_WIDTH: f32 = 64.0;
-const SPRITE_HEIGHT: f32 = 64.0;
+const SPRITE_WIDTH: f32 = 266.0;
+const SPRITE_HEIGHT: f32 = 266.0;
 
 // stolen from: https://github.com/gfx-rs/gfx/tree/master/examples/blend
 fn load_texture<R, F>(factory: &mut F,
