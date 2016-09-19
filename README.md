@@ -1,6 +1,6 @@
 # GFX-SPRITE-2D
 
-This is a basic example of a rendering a 64x64 png with alpha transparency using [GFX](https://github.com/gfx-rs/gfx), [glutin](https://github.com/tomaka/glutin), [cgmath](https://github.com/brendanzab/cgmath), and [image](https://github.com/PistonDevelopers/image).
+This is a basic example of a rendering a png with alpha transparency using [GFX](https://github.com/gfx-rs/gfx), [glutin](https://github.com/tomaka/glutin), [cgmath](https://github.com/brendanzab/cgmath), and [image](https://github.com/PistonDevelopers/image).
 
 This is my first step in learning GFX and trying to document my process, so please let me know if there is anything that is correct or could be done better.
 
